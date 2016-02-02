@@ -1,0 +1,32 @@
+<div ui-content-for="title">
+  <span>Assistance</span>
+</div>
+
+<div class="scrollable">
+  <div class="scrollable-content">
+    <div class="section section-break">
+	<img src="img/service client.png">
+        
+        <p><h3>Chat en ligne </h3><a href="https://v2.zopim.com/widget/livechat.html?key=1wtViB4cZlo4SSAn2bAmC6JzuSKzMZib" class="btn btn-moov btn-block">Discuter avec un Conseiller Clientel</a></p>
+        <h3>Service Client </h3>
+        <p>
+        Appeler le
+        <button class="btn btn-moov btn-block" ng-click="call('05300000')">05 30 00 00 (gratuit)</button></p>
+        <p>
+        <button class="btn btn-moov btn-block" ng-click="call('4443')">4443 (payant)</button></p>
+    </div>
+
+    <div class="section section-break">
+        <!--<a href=""
+           ui-turn-on="modal1"
+           class="btn btn-default">ass Show Modal</a>-->
+        <a href="map.html"
+           class="btn btn-moov btn-block" ><i class="fa fa-3x fa-map-marker"></i><br>Carte des Agences Moov</a>
+    </div>
+  </div>
+</div>
+
+<div ui-content-for="modals">
+  <div ng-include="'modal1.html'"></div>
+  <div ng-include="'geoloc.html'"></div>
+</div>
